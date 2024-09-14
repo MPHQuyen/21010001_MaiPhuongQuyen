@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+            
+        }
+
+        #container{
+            background-color: rgb(139, 211, 253);
+        }
+
+        header{
+            padding-top: 10px;
+            background-color: rgb(139, 211, 253);
+            height: 60px;
+        }
+
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li.dropdown {
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+
+        #a1{
+            float: right;
+            margin-top: -35px;
+            font-size: 25px;
+            color: white;
+            text-shadow: 0 0px 5px blue;
+            padding-right: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        article{
+            background-color: rgb(139, 211, 253);
+            float: left;
+            padding: 25px;
+            width: 50%;
+        }
+
+        aside{
+            background-color: rgb(139, 211, 253);
+            float: right;
+            width: 50%;
+            padding-top: 30px;
+        }
+
+        section{
+            background-color: rgb(139, 211, 253);
+            border-top: 7px dotted white;
+            height: 550px;
+        }
+        
+        h1{
+            font-size: 25px;
+            color: white;
+        }
+
+        #a2{
+            color: white;
+            font-size: 16px;
+            padding-top: 15px;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        table{
+            color: white;
+            padding-left: -150px;
+        }
+
+        footer{
+            border-top: 7px dotted white;
+            background-color: rgb(139, 211, 253);
+        }
+
+        
+    </style>
+
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav >
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Products</a>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                        </div>
+                      </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> 
+            </nav>
+            <p id="a1"> <b>Blue World</b> </p>
+
+        </header>
+        <section>
+            <article>
+                <img width="600px" height="400px" src="../IMG/sky.png" alt="">
+                <p style="color: white; text-shadow: 2px 1px 1px white; font-size: 25px;">Happiness on Earth.</p>
+                <p style="color: white; font-size: 16px; padding-left: 7px;"> Inspinring destinations within your reach.</p>
+            </article>
+            <aside>
+                <h1>Your contact information</h1>
+                <p id="a2">Start your travel planning right now with our on-line tour registration form. Just
+                    tell us a little about yourself and your group and one of our travel experts will
+                    contact you to create the perfect tour package custom built for your group's 
+                    needs
+                </p>
+                <table>
+                    <tr>
+                        <td>Title</td>
+                        <td><select style="border-radius: 5px;" name="title" id="title" >
+                            <option value="1">Mr.</option>
+                            <option value="2">Mrs.</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Full Name*</td>
+                        <td ><input style="border-radius: 5px; width: 250px;" type="text" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Mailing Address</td>
+                        <td><input style="border-radius: 5px; width: 250px;" type="text" placeholder="Mailing Address"></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input style="border-radius: 5px; width: 250px;" type="text" placeholder="City"></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td ><input style="border-radius: 5px; width: 250px;" type="text" placeholder="Country"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td>Specific questions or requests about your tour</td>
+                        <td><textarea style="border-radius: 5px ; width: 250px; height: 100px;" name="" id="" cols="30" rows="10" placeholder="Specific questions or requests about your tour"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td >
+                            <input style= "border-radius: 5px; border: 1px dashed black;" type="submit" value="Submit">
+                            <input style="border-radius: 5px; border: 1px dashed black;" type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </aside>
+
+        </section>
+        <footer>
+            <p style="padding-top: 20px; color: white; font-size: 18px;">
+                <center style="color: white; font-size: 18px;">
+                    <b>&#169; 2016 Sky World Tours. All rights reserved.</b>  
+                </center>
+                <center style="color: white; font-size: 18px;">
+                    Contact information: <b>Student Name</b> | <b>Student ID</b> | Testing date: <i><b>16 Sept 2016</b></i> 
+                </center>
+            </p>
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>
